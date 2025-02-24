@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Input, Button,Space, Upload, Row, Col, Form, message } from "antd";
 import { UploadOutlined, DeleteOutlined } from "@ant-design/icons";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import CardInfo from "../Layout/Card";
 
 const { TextArea } = Input;
@@ -77,6 +76,8 @@ const TodoApp = () => {
     );
     setTasks(updatedTasks);
   };
+  
+  {/*delete card*/}
   
   const deleteTask = (taskId) => {
     const updatedTasks = tasks.filter((task) => task.id !== taskId);
