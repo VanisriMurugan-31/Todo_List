@@ -147,6 +147,7 @@ const TodoApp = () => {
              completed={task.completed}
              onToggle={() => toggleTaskCompletion(task.id)}
              onDelete={() => deleteTask(task.id)}/>
+             
           </Col>
         ))}
       </Row>
